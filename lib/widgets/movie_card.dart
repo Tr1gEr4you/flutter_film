@@ -16,20 +16,20 @@ class MovieCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Получаем текущую тему
+
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     return InkWell(
       onTap: onTap,
-      splashColor: Colors.blue.withOpacity(0.3),  // Добавляем эффект волны
-      borderRadius: BorderRadius.circular(8),  // Скругление для эффекта волны
+      splashColor: Colors.blue.withOpacity(0.3), 
+      borderRadius: BorderRadius.circular(8), 
       child: Card(
         elevation: 4,
         margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),  // Скругление углов карточки
+          borderRadius: BorderRadius.circular(8), 
         ),
-        color: isDarkMode ? Colors.grey[800] : Colors.white,  // Цвет фона карточки
+        color: isDarkMode ? Colors.grey[800] : Colors.white,  
         child: Row(
           children: [
             Container(
@@ -57,7 +57,7 @@ class MovieCard extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: isDarkMode ? Colors.white : Colors.black,  // Цвет текста
+                        color: isDarkMode ? Colors.white : Colors.black, 
                       ),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
@@ -66,7 +66,7 @@ class MovieCard extends StatelessWidget {
                     Text(
                       year,
                       style: TextStyle(
-                        color: isDarkMode ? Colors.grey[400] : Colors.grey[600], // Цвет текста
+                        color: isDarkMode ? Colors.grey[400] : Colors.grey[600], 
                         fontSize: 14,
                       ),
                     ),
