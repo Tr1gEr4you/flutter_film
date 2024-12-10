@@ -10,7 +10,6 @@ class RatingStars extends StatelessWidget {
     int fullStars = (rating / 2).floor();
     bool hasHalfStar = (rating / 2) % 1 >= 0.5;
 
-    // Получаем текущую тему
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     return Row(
