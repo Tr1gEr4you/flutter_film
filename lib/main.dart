@@ -16,7 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   bool _isDarkMode = false;
 
-  // Функция для переключения темы
   void _toggleTheme() {
     setState(() {
       _isDarkMode = !_isDarkMode;
